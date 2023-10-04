@@ -1,5 +1,5 @@
 const orderRoute = require('express').Router()
-const { create, readAll, readSingle, updateOrder, deleteOrder } = require('../controller/orderController')
+const {create, readAll, readSingle, updateOrder, deleteOrder } = require('../controller/orderController')
 
 orderRoute.post(`/add`, create)
 orderRoute.get(`/all`, readAll)

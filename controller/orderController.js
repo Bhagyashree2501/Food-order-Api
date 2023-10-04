@@ -4,7 +4,7 @@ const { deliveryStatusTemp, orderTemplate } = require('../util/template')
 const mailConfig = require('../util/mail_config')
 
 
-const add  = async (req,res) => {
+const create  = async (req,res) => {
     try {
         let {items, user, amount } = req.body
         let newOrder = await Order.create(req.body)
